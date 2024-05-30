@@ -1,0 +1,73 @@
+*
+{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;  
+}
+body{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	min-height: 100v;
+	background-image: url('../img/4.jpg');
+	background-size: cover;
+}
+
+.shado{
+	width: 100%;
+	height: inherit;
+	background-color: rgb(0,0,0,0,3);
+	max-height: 100vh;
+}
+@keyframes shado
+{
+	0%{
+		background-color:rgb(0,0,0,0,3); 
+	}
+	20%{
+		background-color: rgb(0,0,0,0,4);
+	}
+	50%{
+		background-color: rgb(0,0,0,0,6);
+	}
+	70%{
+		background-color: rgb(0,0,0,0,7);
+	}
+	100%{
+		background-color: rgb(0,0,0,0,8);
+
+}
+		}
+.moon{
+	position: relative;
+	width: 160px;
+	height: 160px;
+	border-radius:50%;
+	background: linear-gradient(230deg,transparent,transparent,70%,#fff);
+	animation-name: moon;
+	animation: moon 4s linear infinite;
+	margin-left: 1%;
+	margin-top: 1%;
+
+}
+
+@keyframes moon
+{
+	0%{
+	background: linear-gradient(230deg,transparent,transparent,100%,#fff);
+	}
+	20%{
+	background: linear-gradient(230deg,transparent,transparent,70%,#fff);
+	}
+	50%{
+	background: linear-gradient(230deg,transparent,transparent,50%,#fff);
+	}
+	70%{
+	background: linear-gradient(230deg,transparent,transparent,30%,#fff);
+	}
+	100%{
+		background: linear-gradient(230deg,transparent,transparent,0%,#fff);
+	}
+
+
+}	
